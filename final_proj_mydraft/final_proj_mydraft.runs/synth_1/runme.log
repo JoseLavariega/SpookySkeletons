@@ -1,0 +1,115 @@
+
+*** Running vivado
+    with args -log top_level.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top_level.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source top_level.tcl -notrace
+Command: synth_design -top top_level -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 286011 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1839.281 ; gain = 202.688 ; free physical = 1036 ; free virtual = 7872
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'top_level' [/home/joselavariega/Desktop/6.111 Digital Systems Lab/SpookySkeletons/final_proj_mydraft/final_proj_mydraft.srcs/sources_1/new/top_level.sv:6]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_lab3' [/home/joselavariega/Desktop/6.111 Digital Systems Lab/SpookySkeletons/final_proj_mydraft/final_proj_mydraft.srcs/sources_1/imports/Downloads/clk_wiz_lab3.v:67]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [/tools/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32937]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [/tools/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32937]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [/tools/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39940]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 50.375000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 15.500000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 5 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: double 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (2#1) [/tools/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39940]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [/tools/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [/tools/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_lab3' (4#1) [/home/joselavariega/Desktop/6.111 Digital Systems Lab/SpookySkeletons/final_proj_mydraft/final_proj_mydraft.srcs/sources_1/imports/Downloads/clk_wiz_lab3.v:67]
+INFO: [Synth 8-6157] synthesizing module 'xvga' [/home/joselavariega/Desktop/6.111 Digital Systems Lab/SpookySkeletons/final_proj_mydraft/final_proj_mydraft.srcs/sources_1/new/top_level.sv:251]
+	Parameter DISPLAY_WIDTH bound to: 1024 - type: integer 
+	Parameter DISPLAY_HEIGHT bound to: 768 - type: integer 
+	Parameter H_FP bound to: 24 - type: integer 
+	Parameter H_SYNC_PULSE bound to: 136 - type: integer 
+	Parameter H_BP bound to: 160 - type: integer 
+	Parameter V_FP bound to: 3 - type: integer 
+	Parameter V_SYNC_PULSE bound to: 6 - type: integer 
+	Parameter V_BP bound to: 29 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xvga' (5#1) [/home/joselavariega/Desktop/6.111 Digital Systems Lab/SpookySkeletons/final_proj_mydraft/final_proj_mydraft.srcs/sources_1/new/top_level.sv:251]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [/home/joselavariega/Desktop/6.111 Digital Systems Lab/SpookySkeletons/final_proj_mydraft/final_proj_mydraft.srcs/sources_1/new/top_level.sv:182]
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (6#1) [/home/joselavariega/Desktop/6.111 Digital Systems Lab/SpookySkeletons/final_proj_mydraft/final_proj_mydraft.srcs/sources_1/new/top_level.sv:182]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/joselavariega/Desktop/6.111 Digital Systems Lab/SpookySkeletons/final_proj_mydraft/final_proj_mydraft.srcs/sources_1/new/top_level.sv:70]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [/home/joselavariega/Desktop/6.111 Digital Systems Lab/SpookySkeletons/final_proj_mydraft/final_proj_mydraft.runs/synth_1/.Xil/Vivado-285952-system76-pc/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (7#1) [/home/joselavariega/Desktop/6.111 Digital Systems Lab/SpookySkeletons/final_proj_mydraft/final_proj_mydraft.runs/synth_1/.Xil/Vivado-285952-system76-pc/realtime/blk_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (17) of port connection 'addra' does not match port width (16) of module 'blk_mem_gen_0' [/home/joselavariega/Desktop/6.111 Digital Systems Lab/SpookySkeletons/final_proj_mydraft/final_proj_mydraft.srcs/sources_1/new/top_level.sv:70]
+ERROR: [Synth 8-448] named port connection 'addrb' does not exist for instance 'jojos_bram' of module 'blk_mem_gen_0' [/home/joselavariega/Desktop/6.111 Digital Systems Lab/SpookySkeletons/final_proj_mydraft/final_proj_mydraft.srcs/sources_1/new/top_level.sv:74]
+ERROR: [Synth 8-448] named port connection 'clkb' does not exist for instance 'jojos_bram' of module 'blk_mem_gen_0' [/home/joselavariega/Desktop/6.111 Digital Systems Lab/SpookySkeletons/final_proj_mydraft/final_proj_mydraft.srcs/sources_1/new/top_level.sv:75]
+ERROR: [Synth 8-448] named port connection 'doutb' does not exist for instance 'jojos_bram' of module 'blk_mem_gen_0' [/home/joselavariega/Desktop/6.111 Digital Systems Lab/SpookySkeletons/final_proj_mydraft/final_proj_mydraft.srcs/sources_1/new/top_level.sv:76]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/joselavariega/Desktop/6.111 Digital Systems Lab/SpookySkeletons/final_proj_mydraft/final_proj_mydraft.srcs/sources_1/new/top_level.sv:126]
+INFO: [Synth 8-6157] synthesizing module 'ila_0' [/home/joselavariega/Desktop/6.111 Digital Systems Lab/SpookySkeletons/final_proj_mydraft/final_proj_mydraft.runs/synth_1/.Xil/Vivado-285952-system76-pc/realtime/ila_0_stub.v:6]
+ERROR: [Synth 8-6156] failed synthesizing module 'ila_0' [/home/joselavariega/Desktop/6.111 Digital Systems Lab/SpookySkeletons/final_proj_mydraft/final_proj_mydraft.runs/synth_1/.Xil/Vivado-285952-system76-pc/realtime/ila_0_stub.v:6]
+ERROR: [Synth 8-6156] failed synthesizing module 'top_level' [/home/joselavariega/Desktop/6.111 Digital Systems Lab/SpookySkeletons/final_proj_mydraft/final_proj_mydraft.srcs/sources_1/new/top_level.sv:6]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1904.000 ; gain = 267.406 ; free physical = 1071 ; free virtual = 7907
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+19 Infos, 3 Warnings, 0 Critical Warnings and 6 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Fri Nov 19 01:08:24 2021...

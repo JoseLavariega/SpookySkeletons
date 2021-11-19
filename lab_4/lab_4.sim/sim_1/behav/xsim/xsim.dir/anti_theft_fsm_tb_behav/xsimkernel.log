@@ -1,0 +1,7 @@
+Running: xsim.dir/anti_theft_fsm_tb_behav/xsimk -simmode gui -wdb anti_theft_fsm_tb_behav.wdb -simrunnum 0 -socket 32907
+Design successfully loaded
+Design Loading Memory Usage: 33448 KB (Peak: 33568 KB)
+Design Loading CPU Usage: 50 ms
+Simulation completed
+Simulation Memory Usage: 115444 KB (Peak: 172716 KB)
+Simulation CPU Usage: 3070 ms

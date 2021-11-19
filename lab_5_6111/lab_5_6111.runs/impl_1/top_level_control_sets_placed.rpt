@@ -1,0 +1,125 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Wed Oct 27 17:59:00 2021
+| Host         : system76-pc running 64-bit Ubuntu 20.04.1 LTS
+| Command      : report_control_sets -verbose -file top_level_control_sets_placed.rpt
+| Design       : top_level
+| Device       : xc7a100t
+--------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    47 |
+|    Minimum number of control sets                        |    47 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    27 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    47 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |    37 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     6 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               1 |            1 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              32 |           12 |
+| Yes          | No                    | No                     |              24 |           10 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             396 |          149 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-----------------------+-------------------------------------+-------------------------------+------------------+----------------+
+|      Clock Signal     |            Enable Signal            |        Set/Reset Signal       | Slice Load Count | Bel Load Count |
++-----------------------+-------------------------------------+-------------------------------+------------------+----------------+
+|  clk_100mhz_IBUF_BUFG |                                     |                               |                1 |              1 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/index                  | myrec/my_fir/index[4]_i_1_n_0 |                2 |              5 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/state                  | btnd_IBUF                     |                1 |              5 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[29][7]_i_1_n_0  | btnd_IBUF                     |                3 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[10][7]_i_1_n_0  | btnd_IBUF                     |                3 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[11][7]_i_1_n_0  | btnd_IBUF                     |                6 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[12][7]_i_1_n_0  | btnd_IBUF                     |                5 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[13][7]_i_1_n_0  | btnd_IBUF                     |                5 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[14][7]_i_1_n_0  | btnd_IBUF                     |                5 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[15][7]_i_1_n_0  | btnd_IBUF                     |                3 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[16][7]_i_1_n_0  | btnd_IBUF                     |                4 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[17][7]_i_1_n_0  | btnd_IBUF                     |                2 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[28][7]_i_1_n_0  | btnd_IBUF                     |                2 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[2][7]_i_1_n_0   | btnd_IBUF                     |                1 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[9][7]_i_1_n_0   | btnd_IBUF                     |                7 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[8][7]_i_1_n_0   | btnd_IBUF                     |                4 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/data_out[7]_i_1_n_0           |                               |                5 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/data_to_bram[7]_i_1_n_0       | btnd_IBUF                     |                3 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/x[7]_i_1_n_0                  |                               |                2 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample_counter_reg[13] |                               |                3 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[30][7]_i_1_n_0  | btnd_IBUF                     |                2 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[27][7]_i_1_n_0  | btnd_IBUF                     |                4 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[22][7]_i_1_n_0  | btnd_IBUF                     |                4 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[24][7]_i_1_n_0  | btnd_IBUF                     |                3 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[4][7]_i_1_n_0   | btnd_IBUF                     |                3 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[3][7]_i_1_n_0   | btnd_IBUF                     |                3 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[31][7]_i_1_n_0  | btnd_IBUF                     |                2 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[5][7]_i_1_n_0   | btnd_IBUF                     |                3 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[6][7]_i_1_n_0   | btnd_IBUF                     |                4 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[23][7]_i_1_n_0  | btnd_IBUF                     |                2 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[7][7]_i_1_n_0   | btnd_IBUF                     |                4 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[26][7]_i_1_n_0  | btnd_IBUF                     |                2 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[21][7]_i_1_n_0  | btnd_IBUF                     |                5 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[25][7]_i_1_n_0  | btnd_IBUF                     |                2 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[18][7]_i_1_n_0  | btnd_IBUF                     |                4 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[19][7]_i_1_n_0  | btnd_IBUF                     |                4 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[1][7]_i_1_n_0   | btnd_IBUF                     |                1 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[20][7]_i_1_n_0  | btnd_IBUF                     |                5 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/y_out[17]_i_1_n_0      | btnd_IBUF                     |                3 |              8 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/sample[0][7]_i_1_n_0   | btnd_IBUF                     |                1 |              8 |
+|  clk_100mhz_IBUF_BUFG |                                     | sample_counter[15]_i_1_n_0    |                4 |             15 |
+|  clk_100mhz_IBUF_BUFG | myrec/control_addr[0]_i_2_n_0       | myrec/control_addr[0]_i_1_n_0 |                4 |             16 |
+|  clk_100mhz_IBUF_BUFG | myrec/highest_addr[15]_i_1_n_0      | btnd_IBUF                     |                5 |             16 |
+|  clk_100mhz_IBUF_BUFG | myrec/sel                           | myrec/clear                   |                4 |             16 |
+|  clk_100mhz_IBUF_BUFG |                                     | btnd_IBUF                     |                8 |             17 |
+|  clk_100mhz_IBUF_BUFG | myrec/my_fir/accumulator[0]_i_2_n_0 | myrec/my_fir/RSTP             |                5 |             18 |
+|  clk_100mhz_IBUF_BUFG | myrec/echo1_addr_1                  | myrec/echo1_addr[15]_i_1_n_0  |               14 |             48 |
++-----------------------+-------------------------------------+-------------------------------+------------------+----------------+
+
+

@@ -1,0 +1,104 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
+| Date         : Thu Oct 14 21:20:38 2021
+| Host         : system76-pc running 64-bit Ubuntu 20.04.1 LTS
+| Command      : report_control_sets -verbose -file top_level_lab4_control_sets_placed.rpt
+| Design       : top_level_lab4
+| Device       : xc7a100t
+-------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    26 |
+|    Minimum number of control sets                        |    26 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   115 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    26 |
+| >= 0 to < 4        |     8 |
+| >= 4 to < 6        |     6 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    11 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              18 |            9 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              83 |           29 |
+| Yes          | No                    | No                     |              11 |            9 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             197 |           52 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------+--------------------------------------+-------------------------------------------------+------------------+----------------+
+|       Clock Signal      |             Enable Signal            |                 Set/Reset Signal                | Slice Load Count | Bel Load Count |
++-------------------------+--------------------------------------+-------------------------------------------------+------------------+----------------+
+|  clk_100mhz_IBUF_BUFG   | db1/new_input_i_1_n_0                |                                                 |                1 |              1 |
+|  clk_100mhz_IBUF_BUFG   | db3/status_led2_out                  |                                                 |                1 |              1 |
+|  clk_100mhz_IBUF_BUFG   | db3/new_input_i_1__1_n_0             |                                                 |                1 |              1 |
+|  clk_100mhz_IBUF_BUFG   | db2/new_input_i_1__0_n_0             |                                                 |                1 |              1 |
+|  clk_100mhz_IBUF_BUFG   | db5/new_input_i_1__3_n_0             |                                                 |                1 |              1 |
+|  clk_100mhz_IBUF_BUFG   | make_audio/audio_signal0_out         | sw_IBUF[15]                                     |                1 |              1 |
+|  clk_100mhz_IBUF_BUFG   | db4/new_input_i_1__2_n_0             |                                                 |                1 |              1 |
+|  clk_100mhz_IBUF_BUFG   | db6/new_input_i_1__4_n_0             |                                                 |                1 |              1 |
+|  db6/clean_out_reg_0[0] |                                      | sw_IBUF[15]                                     |                1 |              4 |
+|  clk_100mhz_IBUF_BUFG   | car_alarm/time1/E[0]                 | sw_IBUF[15]                                     |                1 |              4 |
+|  clk_100mhz_IBUF_BUFG   | car_alarm/time1/count_out[3]_i_1_n_0 |                                                 |                2 |              4 |
+|  db6/E[0]               |                                      | sw_IBUF[15]                                     |                1 |              4 |
+|  db6/clean_out_reg_2[0] |                                      | sw_IBUF[15]                                     |                1 |              4 |
+|  db6/clean_out_reg_1[0] |                                      | sw_IBUF[15]                                     |                1 |              4 |
+|  clk_100mhz_IBUF_BUFG   | sev_seg/segment_state_1              | sw_IBUF[15]                                     |                4 |              8 |
+|  clk_100mhz_IBUF_BUFG   |                                      |                                                 |                9 |             18 |
+|  clk_100mhz_IBUF_BUFG   | db4/count                            | db4/new_input_i_1__2_n_0                        |                5 |             20 |
+|  clk_100mhz_IBUF_BUFG   | db2/count                            | db2/new_input_i_1__0_n_0                        |                5 |             20 |
+|  clk_100mhz_IBUF_BUFG   | db6/count                            | db6/new_input_i_1__4_n_0                        |                5 |             20 |
+|  clk_100mhz_IBUF_BUFG   | db1/count                            | db1/new_input_i_1_n_0                           |                5 |             20 |
+|  clk_100mhz_IBUF_BUFG   | db3/count                            | db3/new_input_i_1__1_n_0                        |                5 |             20 |
+|  clk_100mhz_IBUF_BUFG   | db5/count                            | db5/new_input_i_1__3_n_0                        |                5 |             20 |
+|  clk_100mhz_IBUF_BUFG   |                                      | car_alarm/time1/intermediate_counter[0]_i_1_n_0 |                8 |             31 |
+|  clk_100mhz_IBUF_BUFG   | car_alarm/siren                      | make_audio/cycle_counter[0]_i_1_n_0             |                8 |             32 |
+|  clk_100mhz_IBUF_BUFG   | make_audio/audio_signal0_out         | make_audio/counter[0]_i_1_n_0                   |                8 |             32 |
+|  clk_100mhz_IBUF_BUFG   |                                      | sw_IBUF[15]                                     |               17 |             36 |
++-------------------------+--------------------------------------+-------------------------------------------------+------------------+----------------+
+
+

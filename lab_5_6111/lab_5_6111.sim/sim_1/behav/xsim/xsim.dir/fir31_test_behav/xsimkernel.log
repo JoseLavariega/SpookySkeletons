@@ -1,0 +1,7 @@
+Running: xsim.dir/fir31_test_behav/xsimk -simmode gui -wdb fir31_test_behav.wdb -simrunnum 0 -socket 52943
+Design successfully loaded
+Design Loading Memory Usage: 33432 KB (Peak: 33552 KB)
+Design Loading CPU Usage: 10 ms
+Simulation completed
+Simulation Memory Usage: 115428 KB (Peak: 172700 KB)
+Simulation CPU Usage: 20 ms

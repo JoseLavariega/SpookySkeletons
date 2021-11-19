@@ -1,0 +1,17 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /tools/Xilinx/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab -wto b1558f58feca4e23b6794b1e81b52a12 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot fir31_test_behav xil_defaultlib.fir31_test xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/joselavariega/Desktop/6.111 Digital Systems Lab/lab_5_6111/lab_5_6111.srcs/sources_1/imports/Downloads/lab5_audio.sv" Line 189. Module fir31 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/joselavariega/Desktop/6.111 Digital Systems Lab/lab_5_6111/lab_5_6111.srcs/sources_1/imports/Downloads/lab5_audio.sv" Line 260. Module coeffs31 doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.coeffs31
+Compiling module xil_defaultlib.fir31
+Compiling module xil_defaultlib.fir31_test
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot fir31_test_behav

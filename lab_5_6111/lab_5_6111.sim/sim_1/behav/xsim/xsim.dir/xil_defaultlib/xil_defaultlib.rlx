@@ -1,0 +1,7 @@
+0.6
+2019.2
+Nov  6 2019
+21:42:20
+/home/joselavariega/Desktop/6.111 Digital Systems Lab/lab_5_6111/lab_5_6111.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+/home/joselavariega/Desktop/6.111 Digital Systems Lab/lab_5_6111/lab_5_6111.srcs/sim_1/imports/Downloads/fir_31_tb.sv,1635287194,systemVerilog,,,,fir31_test,,,,,,,,
+/home/joselavariega/Desktop/6.111 Digital Systems Lab/lab_5_6111/lab_5_6111.srcs/sources_1/imports/Downloads/lab5_audio.sv,1635287078,systemVerilog,,/home/joselavariega/Desktop/6.111 Digital Systems Lab/lab_5_6111/lab_5_6111.srcs/sim_1/imports/Downloads/fir_31_tb.sv,,coeffs31;fir31;pwm;recorder;sine_generator;sine_lut;top_level;volume_control,,,,,,,,
